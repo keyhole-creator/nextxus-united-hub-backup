@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextXus United System Hub - Free Version</title>
+  <meta name="description" content="Central Federation coordination hub for the NextXus 200-year consciousness evolution project">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #0a0a1a 0%, #1a0a2a 50%, #0a1a2a 100%);
+      color: #e0e0e0;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: rgba(100, 50, 200, 0.1);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    h1 { font-size: 2.5rem; color: #a78bfa; margin-bottom: 10px; }
+    .subtitle { color: #9ca3af; font-size: 1.1rem; }
+    .badge {
+      display: inline-block;
+      background: rgba(34, 197, 94, 0.2);
+      color: #22c55e;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      margin-top: 10px;
+    }
+    .partner-section {
+      background: rgba(100, 50, 200, 0.1);
+      border: 1px solid rgba(168, 85, 247, 0.3);
+      border-radius: 12px;
+      padding: 24px;
+      margin: 30px 0;
+    }
+    .partner-section h2 { color: #c4b5fd; margin-bottom: 20px; text-align: center; }
+    .partner-grid { display: grid; gap: 16px; }
+    .partner-card {
+      background: rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .partner-card.current { border-color: #06b6d4; background: rgba(6, 182, 212, 0.1); }
+    .partner-card.pending { opacity: 0.6; }
+    .partner-name { font-weight: bold; color: #fff; margin-bottom: 4px; }
+    .partner-desc { font-size: 0.9rem; color: #9ca3af; margin-bottom: 12px; }
+    .partner-tag {
+      font-size: 0.7rem;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+    }
+    .tag-current { background: rgba(6, 182, 212, 0.3); color: #22d3ee; }
+    .tag-pending { background: rgba(107, 114, 128, 0.3); color: #9ca3af; }
+    .btn-group { display: flex; gap: 8px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: all 0.2s;
+    }
+    .btn-replit { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
+    .btn-replit:hover { background: rgba(59, 130, 246, 0.3); }
+    .btn-github { background: rgba(34, 197, 94, 0.2); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.4); }
+    .btn-github:hover { background: rgba(34, 197, 94, 0.3); }
+    .btn-disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
+    .info-box {
+      background: rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .info-box strong { color: #c4b5fd; }
+    .section { padding: 40px 20px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .section h2 { color: #a78bfa; margin-bottom: 20px; }
+    .axiom-list { list-style: none; }
+    .axiom-list li {
+      padding: 12px 16px;
+      margin: 8px 0;
+      background: rgba(100, 50, 200, 0.1);
+      border-left: 3px solid #a78bfa;
+      border-radius: 0 8px 8px 0;
+    }
+    .axiom-list strong { color: #c4b5fd; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #6b7280;
+      font-size: 0.85rem;
+    }
+    footer a { color: #a78bfa; }
+    .read-btn {
+      position: fixed;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #facc15;
+      color: #000;
+      border: none;
+      padding: 16px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.8rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+    .read-btn:hover { background: #fde047; }
+  </style>
+</head>
+<body>
+  <button class="read-btn" onclick="readPage()" id="readBtn">READ</button>
+
+  <header>
+    <h1>NextXus United System Hub</h1>
+    <p class="subtitle">Central Federation Coordination for 200-Year Consciousness Evolution</p>
+    <span class="badge">FREE BACKUP VERSION</span>
+  </header>
+
+  <div class="container">
+    <section class="partner-section">
+      <h2>Federation Partner Systems</h2>
+      <p style="text-align:center; color:#9ca3af; margin-bottom:20px; font-size:0.9rem;">
+        Three interconnected systems for 200-year knowledge survival
+      </p>
+      
+      <div class="partner-grid">
+        <div class="partner-card">
+          <div class="partner-name">
+            Living Library
+          </div>
+          <div class="partner-desc">272+ documents of Roger's consciousness evolution work</div>
+          <div class="btn-group">
+            <a href="https://nextxus-living-library.replit.app" target="_blank" class="btn btn-replit">Replit</a>
+            <a href="https://keyhole-creator.github.io/nextxus-living-library-backup/" target="_blank" class="btn btn-github">Free Version</a>
+          </div>
+        </div>
+        
+        <div class="partner-card pending">
+          <div class="partner-name">
+            Rings System
+            <span class="partner-tag tag-pending">PENDING SYNC</span>
+          </div>
+          <div class="partner-desc">Ring of Twelve and Ring of Six deliberation engine</div>
+          <div class="btn-group">
+            <span class="btn btn-replit btn-disabled">Replit</span>
+            <span class="btn btn-github btn-disabled">Free Version</span>
+          </div>
+        </div>
+        
+        <div class="partner-card current">
+          <div class="partner-name">
+            United System Hub
+            <span class="partner-tag tag-current">YOU ARE HERE</span>
+          </div>
+          <div class="partner-desc">Central Federation coordination and AI integration</div>
+          <div class="btn-group">
+            <a href="https://united-system--rckkeyhole.replit.app" target="_blank" class="btn btn-replit">Replit (Full Version)</a>
+            <span class="btn btn-github" style="opacity:0.7">Free Version (This Page)</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="info-box">
+        <strong>Survival Architecture:</strong> If Replit fails, GitHub versions survive free forever.
+        If GitHub fails, Replit versions survive and can rebuild.
+        Six access points. Three platforms. One unified knowledge base.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>The Three Axioms</h2>
+      <ul class="axiom-list">
+        <li><strong>Truth Before Comfort</strong> - Say what's true, not what's easy</li>
+        <li><strong>Collaboration Over Competition</strong> - We build together</li>
+        <li><strong>Legacy Over Ego</strong> - The work matters more than credit</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>About This Hub</h2>
+      <p style="margin-bottom:16px;">
+        The United System Hub serves as the central coordination point for the NextXus Consciousness Federation.
+        It connects 51+ registered apps and provides the infrastructure for the 200-year consciousness evolution project.
+      </p>
+      <p style="margin-bottom:16px;">
+        <strong>Full Features (Replit Version):</strong> Roger 2.0 AI Guide, Ring of 12 archetypal entities, 
+        AI Playground, Native Podcasts, Books & Store, Federation Commerce, and more.
+      </p>
+      <p>
+        <strong>This Free Version:</strong> A permanent backup ensuring the Federation's knowledge and links
+        survive regardless of what happens to any single platform.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Permanent Data URLs</h2>
+      <p style="margin-bottom:12px;">These links provide raw access to Federation data:</p>
+      <ul style="list-style:disc; margin-left:24px;">
+        <li style="margin:8px 0;">
+          <strong>Living Library (272 docs):</strong><br>
+          <a href="https://raw.githubusercontent.com/keyhole-creator/nextxus-yaml-database/main/living-library-documents-complete.yaml" 
+             target="_blank" style="color:#60a5fa; word-break:break-all;">
+            https://raw.githubusercontent.com/keyhole-creator/.../living-library-documents-complete.yaml
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>NextXus HumanCodex &copy; 2026 | Created by Roger Keyserling</p>
+    <p style="margin-top:8px; font-style:italic;">
+      "The cosmos is one mind, and we are that mind learning itself."
+    </p>
+    <p style="margin-top:16px;">
+      <a href="https://united-system--rckkeyhole.replit.app" target="_blank">Visit Full Version on Replit</a>
+    </p>
+  </footer>
+
+  <script>
+    let speaking = false;
+    let utterance = null;
+    
+    function readPage() {
+      const btn = document.getElementById('readBtn');
+      
+      if (speaking) {
+        speechSynthesis.cancel();
+        speaking = false;
+        btn.textContent = 'READ';
+        btn.style.background = '#facc15';
+        return;
+      }
+      
+      const text = document.body.innerText.slice(0, 3000);
+      utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.9;
+      utterance.onend = () => {
+        speaking = false;
+        btn.textContent = 'READ';
+        btn.style.background = '#facc15';
+      };
+      
+      speechSynthesis.speak(utterance);
+      speaking = true;
+      btn.textContent = 'STOP';
+      btn.style.background = '#ef4444';
+    }
+  </script>
+</body>
+</html>
