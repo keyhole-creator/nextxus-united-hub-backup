@@ -1,24 +1,22 @@
-# NextXus United System Hub - Free Backup with Roger 2.0
+# NextXus United Hub - Roger 2.0 (Free Version)
 
-Central Federation hub with **Roger 2.0 AI Guide** for the 200-year consciousness evolution project.
+Roger 2.0 AI Guide with **OpenAI, DeepSeek, and Claude** support.
 
 ## Live Site
-**GitHub Pages:** https://keyhole-creator.github.io/nextxus-united-hub-backup/
+https://keyhole-creator.github.io/nextxus-united-hub-backup/
 
-**Full Version (Replit):** https://united-system--rckkeyhole.replit.app
+## Supported AI Providers
+- **OpenAI** (GPT-4o-mini)
+- **DeepSeek** (DeepSeek-Chat)  
+- **Claude** (Claude-3-Haiku)
 
-## Features
-- **Roger 2.0 AI Chat** - Add your own OpenAI API key to unlock
-- **READ Button** - Text-to-speech for accessibility
-- **Federation Links** - Cross-links to all partner systems
+Your API key is stored locally in your browser only.
 
-## Federation Partner Systems
-- **Living Library**: [Replit](https://nextxus-living-library.replit.app) | [GitHub](https://keyhole-creator.github.io/nextxus-living-library-backup/)
-- **Rings System**: Pending
-- **United Hub**: This repository
-
-## API Key
-The Roger 2.0 chat requires an OpenAI API key. Get one at [platform.openai.com/api-keys](https://platform.openai.com/api-keys).
-Your key is stored locally in your browser only.
+## Federation Systems
+| System | Replit | GitHub |
+|--------|--------|--------|
+| Living Library | [Link](https://nextxus-living-library.replit.app) | [Link](https://keyhole-creator.github.io/nextxus-living-library-backup/) |
+| United Hub | [Link](https://united-system--rckkeyhole.replit.app) | This repo |
+| Rings System | Pending | Pending |
 
 *Truth Before Comfort. Collaboration Over Competition. Legacy Over Ego.*
